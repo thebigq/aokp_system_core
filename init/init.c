@@ -480,7 +480,7 @@ static void import_kernel_nv(char *name, int in_qemu)
             strlcpy(bootloader, value, sizeof(bootloader));
         } else if (!strcmp(name,"androidboot.hardware")) {
             strlcpy(hardware, value, sizeof(hardware));
-		} else if (!strcmp(name,"androidboot.modelno")) {
+        } else if (!strcmp(name,"androidboot.modelno")) {
             strlcpy(modelno, value, sizeof(modelno));
         } else if (!strcmp(name,"androidboot.emmc")) {
             if (!strcmp(value,"true")) {
